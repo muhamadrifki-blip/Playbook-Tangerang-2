@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "Playbook BAE Accurate Online Tangerang 2",
+  "short_name": "Playbook BAE",
+  "description": "Panduan kerja harian BAE Accurate Online Tangerang 2.",
+  "lang": "id-ID",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#eef3f1",
+  "theme_color": "#075c45",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

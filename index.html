@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#075c45">
+<meta name="description" content="Playbook kerja harian BAE Accurate Online Tangerang 2.">
+<meta name="application-name" content="Playbook BAE">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Playbook BAE">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>Playbook BAE Accurate Online Tangerang 2</title>
+<style>
+:root{--bg:#f1f5f4;--fg:#0f1f27;--card:#fff;--mut:#5b6f76;--line:#d3ddda;--acc:#0e6b4f;--accfg:#fff;--warn:#fdf2de;--warnl:#e8971b;--bad:#be3b2c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a1f;--fg:#e6eeec;--card:#18272e;--mut:#9db2b8;--line:#2c4048;--acc:#3fb58d;--accfg:#06241a;--warn:#2b2412;--warnl:#e8971b;--bad:#ef7b6c}}
+:root[data-theme="dark"]{--bg:#0f1a1f;--fg:#e6eeec;--card:#18272e;--mut:#9db2b8;--line:#2c4048;--acc:#3fb58d;--accfg:#06241a;--warn:#2b2412;--warnl:#e8971b;--bad:#ef7b6c}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-bottom:84px}
+header{padding:14px 16px 6px;max-width:760px;margin:0 auto}
+header small{color:var(--mut);font-size:12px;letter-spacing:.04em}
+h1{font-size:20px;margin:2px 0 0;line-height:1.2}
+main{max-width:760px;margin:0 auto;padding:0 12px}
+h2{font-size:17px;margin:18px 4px 8px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 10px}
+.c h3{margin:0 0 6px;font-size:14px;color:var(--acc)}
+.c p{margin:0 0 6px}
+.c ul,.c ol{margin:4px 0 0;padding-left:20px}
+.c li{margin:0 0 4px}
+.w{background:var(--warn);border-color:var(--warnl)}
+.m{color:var(--mut);font-size:13px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{border-bottom:1px solid var(--line);padding:7px 6px;text-align:left;vertical-align:top}
+th{font-size:12px;color:var(--mut);font-weight:600}
+td:first-child{font-weight:600;min-width:96px}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--card);border-top:1px solid var(--line);padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));z-index:5}
+nav button{flex:1;border:0;background:none;color:var(--mut);font:600 12px system-ui,sans-serif;padding:14px 2px;border-radius:10px}
+nav button.on{background:var(--acc);color:var(--accfg)}
+label{display:block;margin:0 0 10px;font-size:14px}
+label small{color:var(--mut)}
+select{display:block;width:100%;margin-top:4px;padding:10px;font:inherit;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px}
+.ck{display:flex;gap:8px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line);margin:0}
+.ck input{width:20px;height:20px}
+.ck b{margin-left:auto;color:var(--acc)}
+.res{position:sticky;top:0;background:var(--card);border:2px solid var(--acc);border-radius:12px;padding:10px 14px;margin:0 0 10px;font-size:15px;z-index:2}
+.res b{font-size:22px}
+a{color:var(--acc);font-weight:600}
+.lk a{display:inline-block;padding:11px 14px;border:1px solid var(--line);border-radius:10px;margin:0 6px 8px 0}
+.now{border:2px solid var(--acc)}
+.now h3::after{content:" · SEKARANG"}
+summary{font-weight:600;color:var(--acc);padding:4px 0}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef3f1;--fg:#10231d;--card:#fff;--mut:#5d7169;--line:#e3ebe7;--acc:#0b7a5a;--acc2:#16a67c;--accfg:#fff;--soft:#e2f3ec;--warn:#fff6e4;--warnl:#eba33a;--h1:#075c45;--h2:#14a37a;--sh:0 1px 2px rgba(16,35,29,.06),0 6px 18px rgba(16,35,29,.07)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1612;--fg:#e8f1ed;--card:#13231d;--mut:#93aaa1;--line:#223730;--acc:#3ccf9c;--acc2:#7be3bf;--accfg:#06241a;--soft:#143328;--warn:#2a2412;--h1:#0a3a2d;--h2:#12795c;--sh:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.3)}}
+:root[data-theme="dark"]{--bg:#0b1612;--fg:#e8f1ed;--card:#13231d;--mut:#93aaa1;--line:#223730;--acc:#3ccf9c;--acc2:#7be3bf;--accfg:#06241a;--soft:#143328;--warn:#2a2412;--h1:#0a3a2d;--h2:#12795c;--sh:0 1px 2px rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.3)}
+body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15.5px;line-height:1.58;padding-bottom:116px}
+header{max-width:none;margin:0 0 14px;padding:22px max(20px,calc(50% - 360px)) 22px;background:linear-gradient(140deg,var(--h1),var(--h2));color:#fff;border-radius:0 0 28px 28px}
+header small{display:block;color:rgba(255,255,255,.8);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+h1{font-size:25px;font-weight:800;letter-spacing:-.02em;margin:6px 0 0}
+.gr{display:inline-block;background:rgba(255,255,255,.18);border-radius:99px;padding:5px 13px;font-size:13px;font-weight:600;margin:12px 0 0}
+main{padding:0 14px}
+h2{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin:24px 6px 10px}
+.c{border:0;border-radius:20px;padding:16px 18px;margin:0 0 12px;box-shadow:var(--sh)}
+.c h3{font-size:12px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--acc);margin:0 0 8px}
+.c.w{background:var(--warn);border-left:4px solid var(--warnl)}
+.m{font-size:13.5px}
+#t-hari>.c{border-left:4px solid var(--acc)}
+#t-hari>.c.w{border-left-color:var(--warnl)}
+#t-hari>details.c{border-left-color:var(--line)}
+#t-hari>.c.now{background:var(--soft);box-shadow:0 0 0 2px var(--acc),var(--sh)}
+.now h3::after{content:"SEKARANG";background:var(--acc);color:var(--accfg);border-radius:99px;padding:2px 9px;margin-left:8px;font-size:10px;letter-spacing:.08em;vertical-align:1px}
+.c ol{list-style:none;counter-reset:n;padding:0;margin:4px 0 0}
+.c ol>li{counter-increment:n;position:relative;padding-left:36px;margin:0 0 10px}
+.c ol>li::before{content:counter(n);position:absolute;left:0;top:0;width:25px;height:25px;border-radius:50%;background:var(--soft);color:var(--acc);font-weight:800;font-size:13px;display:grid;place-items:center}
+.c ul{list-style:none;padding:0;margin:4px 0 0}
+.c ul>li{position:relative;padding-left:20px;margin:0 0 7px}
+.c ul>li::before{content:"";position:absolute;left:3px;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--acc2)}
+table{font-size:14.5px}
+td,th{padding:10px 8px;border-bottom:1px solid var(--line)}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+tr:last-child td{border-bottom:0}
+td:first-child{color:var(--acc);font-weight:700}
+#kait,#tolak{display:block}
+#kait tr,#tolak tr{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
+#kait tr:last-child,#tolak tr:last-child{border:0}
+#kait td,#tolak td{display:block;padding:0;border:0;min-width:0}
+#kait td:first-child{font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+#tolak tr:first-child{display:none}
+#tolak td:first-child{font-size:15px;color:var(--fg);margin-bottom:3px}
+.tr{display:inline-block;min-width:36px;text-align:center;padding:3px 9px;border-radius:99px;font-size:12px;font-weight:800}
+.tAp{background:var(--acc);color:var(--accfg)}.tA{background:var(--acc2);color:var(--accfg)}.tBp{background:var(--soft);color:var(--acc)}.tB{background:var(--soft);color:var(--mut)}.tC{background:var(--line);color:var(--mut)}
+label{font-weight:600;font-size:13.5px}
+select,#nm{min-height:50px;border:1px solid var(--line)!important;border-radius:14px!important;padding:12px 14px!important;font-size:15px!important}
+select{appearance:none;-webkit-appearance:none;padding-right:40px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%237a8f87' stroke-width='2'%3E%3Cpath d='M1 1l5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center}
+input[type=checkbox]{accent-color:var(--acc);width:22px;height:22px}
+.ck{padding:12px 0}
+.res{top:calc(env(safe-area-inset-top,0px) + 8px);background:linear-gradient(135deg,var(--acc),var(--acc2));color:var(--accfg);border:0;border-radius:18px;padding:12px 18px;box-shadow:var(--sh);font-weight:600}
+.res b{font-size:30px;font-weight:800;margin-right:4px}
+#cp{padding:13px 18px!important;border-radius:14px!important;background:linear-gradient(135deg,var(--acc),var(--acc2))!important;font-size:15px!important}
+.lk a{background:var(--soft);border:0;border-radius:14px;padding:13px 16px;font-size:14.5px}
+.lk a:last-child{background:var(--acc);color:var(--accfg)}
+summary{font-size:14px}
+nav{left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px));max-width:520px;margin:0 auto;padding:6px;border:1px solid var(--line);border-radius:24px;box-shadow:0 10px 32px rgba(0,0,0,.16)}
+nav button{display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 2px;font-size:11px;font-weight:700;border-radius:18px;font-family:inherit}
+nav button.on{background:var(--soft);color:var(--acc)}
+.tab:not([hidden]){animation:in .25s ease}
+@keyframes in{from{opacity:0;transform:translateY(6px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+.seg{display:flex;gap:6px;background:var(--card);padding:5px;border-radius:16px;box-shadow:var(--sh);margin:0 0 12px}
+.seg button{flex:1;border:0;background:none;color:var(--mut);font-weight:700;font-size:13px;font-family:inherit;padding:12px 6px;border-radius:12px}
+.seg button.on{background:var(--acc);color:var(--accfg)}
+.pgb{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin:10px 0 6px}.pgb div{height:100%;background:linear-gradient(90deg,var(--acc),var(--acc2));transition:width .3s}
+.blk{border-left:4px solid var(--line)}.blk.now{border-left-color:var(--acc);background:var(--soft)}.blk.done{opacity:.6}
+.bh{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}.bh h3{margin:0;flex:1 1 150px}
+.tm{font-weight:800;font-size:13px;background:var(--soft);color:var(--acc);padding:4px 10px;border-radius:99px;white-space:nowrap}.blk.now .tm{background:var(--card)}
+.dn{display:flex;align-items:center;gap:6px;margin:0;font-size:13px;color:var(--mut)}
+.out{margin:8px 0 0;padding:9px 12px;background:var(--soft);border-radius:12px;font-size:14px}.blk.now .out{background:var(--card)}
+.out b{color:var(--acc);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-right:8px}
+li.ad::before{background:var(--warnl)!important}
+.lg{margin:0 6px 12px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--warnl);margin-right:6px}
+.sub{display:flex;gap:6px;overflow-x:auto;margin:0 0 12px;padding-bottom:4px}.sub button{flex:none;border:0;border-radius:99px;padding:11px 16px;background:var(--card);color:var(--mut);font-weight:700;font-size:13.5px;font-family:inherit;box-shadow:var(--sh)}.sub button.on{background:var(--acc);color:var(--accfg)}
+.st{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.st:last-child{border:0}.st .tm{align-self:flex-start;min-width:66px;text-align:center}
+nav button{font-size:10.5px;padding:8px 0}
+:root{--bg:#f8f2f1;--fg:#2a1517;--card:#fff;--mut:#75595c;--line:#eadcdc;--acc:#d7192a;--acc2:#f0454f;--accfg:#fff;--soft:#fdecec;--h1:#a30f1c;--h2:#e0242f;--sh:0 1px 2px rgba(60,10,15,.07),0 6px 18px rgba(60,10,15,.08)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#160c0d;--fg:#f7eaea;--card:#231416;--mut:#c4a7a9;--line:#3d2528;--acc:#ff6b73;--acc2:#ff9a8f;--accfg:#2a0508;--soft:#3b1a1e;--h1:#5a0c13;--h2:#a5141f;--sh:0 1px 2px rgba(0,0,0,.45),0 6px 18px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--bg:#160c0d;--fg:#f7eaea;--card:#231416;--mut:#c4a7a9;--line:#3d2528;--acc:#ff6b73;--acc2:#ff9a8f;--accfg:#2a0508;--soft:#3b1a1e;--h1:#5a0c13;--h2:#a5141f;--sh:0 1px 2px rgba(0,0,0,.45),0 6px 18px rgba(0,0,0,.35)}
+h1{font-size:23px}
+:root{--bg:#f3f3f5;--fg:#1d1d22;--card:#fff;--mut:#6a6a74;--line:#e1e1e7;--acc:#ED3969;--acc2:#f06a95;--accfg:#fff;--soft:#fde8ef;--gray:#6E6F71;--warn:#f1f1f4;--warnl:#f0a030;--sh:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141214;--fg:#f4f1f3;--card:#1f1c20;--mut:#b5adb3;--line:#38333a;--acc:#ff5c8f;--acc2:#ff8fb0;--accfg:#2a0713;--soft:#3a1a27;--gray:#8a838a;--warn:#2a262b;--warnl:#f0a030;--sh:none}}
+:root[data-theme="dark"]{--bg:#141214;--fg:#f4f1f3;--card:#1f1c20;--mut:#b5adb3;--line:#38333a;--acc:#ff5c8f;--acc2:#ff8fb0;--accfg:#2a0713;--soft:#3a1a27;--gray:#8a838a;--warn:#2a262b;--warnl:#f0a030;--sh:none}
+
+body{font-family:"Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px}
+h1,h2,.c h3,.lg b,th,nav button,.seg button,.sub button,.tm{font-family:Montserrat,"Open Sans",system-ui,sans-serif}
+header{background:var(--card);color:var(--fg);border-bottom:1px solid var(--line);border-radius:0 0 22px 22px;padding:18px max(18px,calc(50% - 360px)) 16px;margin:0 0 12px}
+.lg{display:flex;align-items:center;gap:8px}.lg b{font-size:21px;font-weight:700;color:var(--gray);letter-spacing:-.02em}
+.pn{margin-left:auto;background:var(--gray);color:#fff;border-radius:99px;padding:3px 12px;font-size:12px;font-weight:700}
+h1{background:var(--acc);color:var(--accfg);border-radius:26px;padding:14px 20px;margin:14px 0 10px;font-size:18px;font-weight:800;text-align:center;letter-spacing:0;line-height:1.3}
+.sub2{display:table;margin:0 auto;background:var(--gray);color:#fff;border-radius:99px;padding:5px 16px;font-size:11.5px;font-weight:600;text-align:center}
+.gr{display:block;background:none;color:var(--mut);padding:0;margin:10px 0 0;font-size:12.5px;font-weight:600;text-align:center}
+h2{color:var(--acc);font-size:17px;font-weight:800;text-transform:none;letter-spacing:0;margin:22px 4px 10px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:none}
+.c h3{color:var(--acc);font-size:14px;font-weight:800;text-transform:none;letter-spacing:0}
+#t-hari>.c,#t-hari>.c.w,#t-hari>details.c{border-left:1px solid var(--line)}
+.c.w{background:var(--warn);border:1px solid var(--line);border-left:1px solid var(--line)}
+.c ol>li::before{background:var(--acc);color:var(--accfg);border-radius:8px;width:26px;height:26px}
+.c ul>li::before{background:var(--acc)}
+li.ad::before{background:var(--warnl)!important}
+th{background:var(--acc);color:var(--accfg);border:1px solid var(--card);font-size:12px;text-transform:none;letter-spacing:0}
+td{border:1px solid var(--line)}
+td:first-child{color:var(--fg);font-weight:700}
+tr:last-child td{border-bottom:1px solid var(--line)}
+#kait td,#tolak td{border:0}#kait td:first-child{color:var(--acc)}
+.tm{background:var(--gray);color:#fff}.blk.now .tm{background:var(--acc)}
+.blk{border-left:1px solid var(--line)}.blk.now{background:var(--soft);border-color:var(--acc)}
+#t-hari>.c.now{box-shadow:none;border-color:var(--acc)}
+.out{background:var(--warn)}.blk.now .out{background:var(--card)}
+.res{background:var(--acc);box-shadow:none;border-radius:14px}
+.seg button.on,.sub button.on{background:var(--acc);color:var(--accfg)}
+.seg,.sub button{box-shadow:none;border:1px solid var(--line)}
+.pgb div{background:var(--acc)}
+.lk a{background:var(--soft);color:var(--acc)}.lk a:last-child{background:var(--acc);color:var(--accfg)}
+#cp{background:var(--acc)!important}
+nav{box-shadow:0 6px 24px rgba(0,0,0,.14)}
+nav button.on{background:var(--acc);color:var(--accfg)}
+.tr{border-radius:6px}.tAp,.tA{background:var(--acc);color:var(--accfg)}.tBp{background:var(--soft);color:var(--acc)}
+.sub button{padding:11px 12px;font-size:13px}
+.sub{gap:5px}
+header{padding-top:14px;padding-bottom:12px}h1{margin:10px 0 8px}
+:root{--acc:#D71346;--soft:#fde8ee}
+nav button{font-size:11px}
+.out b{font-size:11.5px}
+.blk:not(.open) .bd{display:none}
+.bh{cursor:pointer}
+.cv{margin-left:auto;width:24px;height:24px;display:grid;place-items:center;color:var(--mut)}
+.cv::before{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-top:-3px;transition:transform .2s}
+.blk.open .cv::before{transform:rotate(-135deg);margin-top:3px}
+.dn{min-height:42px;padding:0 4px}
+.dn input{width:24px;height:24px}
+</style>
+</head>
+<body>
+<header><div class="lg"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="15" fill="#ED3969"/><path d="M8.5 21.5L15 8l6.5 13.5h-3.4L15 14.8l-3.1 6.7z" fill="#fff"/></svg><b>accurate</b><span class="pn">v6.0</span></div><h1>Playbook BAE Accurate Online Tangerang 2</h1><span class="sub2">Sales Playbook · Okt 2026</span></header>
+<main>
+
+<section class="tab" id="t-hari">
+<h2>Jadwal hari ini</h2>
+<div class="seg" id="sg"><button data-m="l">Hari lapangan · Sen–Kam</button><button data-m="t">Hari telepon · Jumat</button></div>
+<div class="c"><h3>Target hari ini</h3><p>3 data baru di HubSpot (sales baru 2) · 3–4 KYC, minimal 2 · 1 demo atau meeting (sales baru setelah tandem)</p><div class="pgb" id="pg"></div><p class="m" id="pgt"></p></div>
+<div id="jd"></div>
+<p class="m lg"><span class="dot"></span>Titik oranye = tambahan dari playbook.</p>
+<details class="c"><summary>Istilah singkat</summary><p class="m">PDM: pengambil keputusan pembelian. KYC dasar: empat angka wajib terisi (SKU, gudang atau outlet, sistem sekarang, nama dan jabatan PDM). KYC siap demo: checklist 70% atau lebih. HOT, WARM, NURTURE: tingkat skor prospek (tab Skor). Tandem: masa dampingan sales baru. Definisi lengkap di tab Angka.</p></details>
+<div class="c w"><h3>Kalau rencana berantakan</h3><ul>
+<li>Hujan atau rute batal: pindah ke telepon dan WA, jangan pulang.</li>
+<li>Janji dibatalkan: minta tanggal pengganti sebelum menutup telepon.</li>
+<li>Demo batal: telepon dua prospek yang KYC-nya lengkap, tawarkan pertemuan hari itu.</li>
+<li>Macet: kurangi jumlah pintu, jangan kurangi KYC.</li>
+<li>Waktu tinggal tiga jam: kerjakan inbound, demo atau meeting, HOT, trial, dan HubSpot dulu.</li></ul></div>
+<div class="c w"><h3>Keselamatan dan bekal</h3>
+<p>Setelah pukul 16.00 di Balaraja KM 24 ke barat, Solear, dan pergudangan Kosambi: pergi berdua atau jadwalkan ulang. Kabari lokasi terakhir ke grup territory.</p>
+<p class="m">Bawa: kartu nama 100+, identitas atau surat tugas, HP + powerbank, map, jas hujan, helm/SIM/STNK, air minum.</p></div>
+</section>
+
+<section class="tab" id="t-siapkan" hidden>
+<h2>Kecamatan hari ini</h2>
+<div class="c"><label>Tampilkan<select id="fk"></select></label>
+<div class="tw"><table id="kec"></table></div>
+<p class="m">Tier dan estimasi jumlah perusahaan adalah asumsi kerja sampai dikalibrasi. * belum dialokasikan di bulan pertama. Kecamatan tanpa territory ditangani lewat telepon. Satu hari satu koridor jalan, bukan satu kecamatan.</p></div>
+<h2>Cari prospek</h2>
+<div class="c"><label>Kecamatan<select id="ck"></select></label><label>Industri<select id="ci"></select></label>
+<p id="cq" class="m"></p>
+<p class="lk"><a id="lm" target="_blank" rel="noopener">Google Maps</a> · <a id="lg" target="_blank" rel="noopener">Google</a> · <a id="ll" target="_blank" rel="noopener">LinkedIn</a><a href="#skor">Nilai pin →</a></p>
+<p class="m">Pola: industri + kecamatan. Jangan pakai nama kabupaten, hasilnya melebar ke Kota Tangerang. Perbesar peta ke satu koridor jalan, simpan titik, urutkan dari yang terjauh. Maps untuk daftar titik, Google untuk cek ukuran perusahaan, LinkedIn untuk nama pengambil keputusan. Nilai pin di tab Skor sebelum berangkat.</p></div>
+<div class="c w"><h3>Minggu pertama: hitung cepat Maps</h3><p class="m">Per kecamatan tier A+ sampai B, jalankan lima keyword: distributor, supplier, gudang, pabrik, ekspedisi. Hitung hanya yang benar-benar badan usaha, bukan rumah, toko eceran, atau duplikat. Itu baseline nyata Anda. Setelah 30 hari catat berapa yang tersambung dan lolos KYC.</p></div>
+<div class="c tw"><h3>Jam terbaik per tipe usaha</h3><table id="jam"></table><p class="m">Senin pagi paling banyak penolakan. Selasa sampai Kamis hari lapangan terbaik. Jumat untuk follow up dan janji.</p></div>
+</section>
+
+<section class="tab" id="t-pintu" hidden>
+<h2>Di pintu</h2>
+<div class="c"><h3>Empat langkah</h3><ol><li><b>Izin:</b> minta nama bagian accounting, bukan pertemuan.</li><li><b>Kait:</b> sebut masalah, bukan produk.</li><li><b>Gali:</b> tiga pertanyaan, lalu diam.</li><li><b>Minta:</b> dua pilihan waktu.</li></ol></div>
+<div class="c w"><h3>Lima larangan</h3><ul><li>Jangan tanya “boleh minta waktunya sebentar?”</li><li>Jangan sebut harga di pintu.</li><li>Jangan buka laptop di kunjungan pertama.</li><li>Jangan demo sebelum KYC siap demo (70%).</li><li>Jangan terima pembayaran ke rekening pribadi.</li></ul></div>
+<div class="c"><h3>Siapa yang Anda sebut</h3><p>Ke satpam dan resepsionis: PT Cipta Piranti Sejahtera dan urusan accounting saja. Kata “software” menutup gerbang. Setelah ketemu orang yang tepat: sebut CPSSoft, pembuat Accurate.</p>
+<p class="m">Satpam: “Pagi Pak. Bagian accounting-nya lewat mana ya?” → “Belum ada janji sih, makanya mampir dulu. Yang pegang accounting siapa ya namanya?” → kalau ditolak, minta nama dan nomor kantor, titip kartu nama. Tanpa nama pun, tanya jam orang kantor keluar: itu tetap informasi.</p>
+<p class="m">Blank? “Bentar Pak, saya lupa mau ngomong apa. Intinya, stok di sini masih dicatat manual apa udah pakai sistem?”</p></div>
+<h2>Kalimat kait (hafal satu)</h2>
+<div class="c tw"><table id="kait"></table></div>
+<p class="m" style="margin:0 4px 10px">Retail dan F&amp;B yang sudah punya kasir: jangan serang kasirnya. “Kasirnya sudah jalan, tinggal akuntansinya.” Produk kasir (APOS) diteruskan lewat leader.</p>
+<h2>Kalau ditolak</h2>
+<p class="m" style="margin:0 4px 8px">Jangan membantah. Terima setengah kalimat, lalu satu pertanyaan.</p>
+<div class="c tw"><table id="tolak"></table></div>
+</section>
+
+<section class="tab" id="t-gali" hidden>
+<h2>Gali (KYC)</h2>
+<div class="c w"><h3>Empat angka wajib</h3><p>Jumlah SKU · jumlah gudang/outlet · sistem sekarang · nama dan jabatan pengambil keputusan (PDM). Tanpa ini kunjungan tidak dihitung.</p></div>
+<div class="c"><h3>Kunjungan 1: pertanyaan awal</h3><ul><li>Bisnis Bapak/Ibu persisnya jual apa dan ke siapa?</li><li>Sudah berapa tahun, berapa karyawan?</li><li>Transaksi per hari atau bulan? Siapa yang input?</li><li>Jual lewat kanal apa saja? Ada marketplace?</li><li>Harga tiap pelanggan ditentukan dan disimpan di mana?</li><li>Proses beli barang dan catat utang supplier bagaimana?</li></ul></div>
+<div class="c"><h3>Kunjungan 2: kemampuan dan kemauan beli</h3><ul><li><b>Angka di tiap masalah:</b> berapa kali setahun, nilainya, jam kerja terbuang.</li><li><b>Proses beli:</b> siapa tanda tangan akhir, anggaran dari mana.</li><li><b>Tenggat:</b> audit, tutup tahun, buka cabang?</li><li><b>Data awal:</b> siapa menyiapkan saldo dan daftar barang?</li><li><b>Teknis:</b> internet gudang, jumlah pengguna, ada orang IT?</li><li><b>Software lama:</b> kenapa gagal?</li></ul></div>
+<div class="c w"><h3>Tanda berhenti</h3><ul><li>“Saya bicarakan ke atas dulu” tanpa nama: belum bicara dengan PDM.</li><li>Tiga kali ditanya, tak mau sebut angka: jangan demo.</li><li>Tidak ada tenggat: nurture.</li><li>Gudang tanpa internet dan tanpa IT: bicarakan risikonya sejak awal.</li></ul></div>
+<h2>Minta janji</h2>
+<div class="c"><p>Ucapkan di setiap kunjungan, walau yakin ditolak.</p>
+<p><b>Standar:</b> “Tadi ada tiga Pak: stok manual, selisih baru ketauan pas opname, laporan keluar tanggal 20. Saya mau tunjukin tiga itu jalan di satu layar, 30 menit. Selasa pagi apa Kamis siang?”</p>
+<p><b>Ragu:</b> “Kalau nggak cocok, saya nggak akan memaksa Pak. Tapi kalau cocok, Bapak tau biayanya. Selasa apa Kamis?”</p>
+<p><b>Bukan pemilik:</b> “Sebaiknya Pak Budi ikut ya Bu, ada bagian yang nyangkut biaya. Bisa bantu cariin waktunya?”</p>
+<p><b>Setelah dapat janji:</b> catat di tracker sebelum pergi; WA konfirmasi dalam 10 menit (tanggal, jam, tiga masalah); telepon H-1 pagi.</p></div>
+<h2>Ritme follow-up <small class="m">(usulan, uji 30 hari)</small></h2>
+<div class="c"><ul><li><b>H+1:</b> WA terima kasih plus satu contoh laporan yang relevan.</li><li><b>H+3:</b> telepon, tanya satu hal baru, bukan “sudah dilihat belum?”.</li><li><b>H+7:</b> kunjungan ulang atau telepon, tawarkan janji.</li><li>Tiga sentuhan tanpa respons: turun ke NURTURE (telepon bulanan).</li><li><b>Setelah demo:</b> ringkasan tiga masalah dan langkah berikut dalam 24 jam, telepon H+2.</li><li><b>Proforma terkirim:</b> tindak lanjut maksimal 48 jam.</li></ul><p class="m">Aturan satu kalimat: tidak ada prospek tanpa tanggal kontak berikutnya di tracker.</p></div>
+</section>
+
+<section class="tab" id="t-skor" hidden>
+<h2>Nilai pin Maps (pagi)</h2>
+<div class="res" id="pinr"></div>
+<div class="c" id="pin"></div>
+<p class="m" style="margin:0 4px 4px">8-12 kunjungi · 5-7 telepon dulu · 0-4 buang. Bobot asumsi awal.</p>
+<h2>Skor prospek (sore)</h2>
+<div class="res" id="skr"></div>
+<div class="c" id="sk"></div>
+<div class="c"><label>Nama prospek<input id="nm" placeholder="Nama perusahaan" style="display:block;width:100%;margin-top:4px;padding:10px;font:inherit;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px"></label><button id="cp" style="padding:10px 14px;font:600 14px system-ui,sans-serif;border:0;border-radius:8px;background:var(--acc);color:var(--accfg)">Salin ringkasan</button> <span id="cpr" class="m"></span></div>
+<p class="m" style="margin:0 4px">80-100 HOT: demo dalam 3 hari kerja · 60-79 WARM: lengkapi KYC, ajukan janji · 40-59 NURTURE: telepon bulanan · di bawah 40: tutup. PDM belum diketahui atau sudah ERP terpasang: otomatis NURTURE.</p>
+</section>
+
+<section class="tab" id="t-closing" hidden>
+<h2>Closing</h2>
+<div class="sub" id="sb"><button data-p="demo">Demo 30′</button><button data-p="trial">Trial</button><button data-p="harga">Harga</button><button data-p="after">After sales</button></div>
+
+<div class="sp" id="p-demo">
+<div class="c w"><h3>Lima syarat sebelum demo dijadwalkan</h3><ol><li>KYC siap demo: 70% atau lebih. Di bawah itu, lengkapi lewat telepon 10 menit.</li><li>Pengambil keputusan hadir. Kalau hanya staf, demo diundur, bukan diteruskan.</li><li>Tiga masalah ditulis di WA konfirmasi H-1 dan dibenarkan prospek.</li><li>Data contoh memakai istilah prospek: nama barang, pelanggan, satuan.</li><li>Durasi 30 menit disepakati di awal dan ditepati.</li></ol></div>
+<div class="c"><h3>Pilih pembukaan</h3><p><b>A. Hasil KYC:</b> ulangi tiga masalah yang ia sebut sendiri, lalu kunci: “Kalau tiga ini beres, sudah cukup Pak, atau ada yang lebih penting?”</p><p><b>B. Diminta prospek:</b> tanya “sudah familiar dengan Accurate?”, beri gambaran 2-3 menit, lalu berhenti dan minta mereka menjelaskan kebutuhan. Jangan mengulang “tiga masalah”, mereka belum pernah menyebutnya.</p></div>
+<div class="c"><h3>Susunan 30 menit</h3>
+<div class="st"><span class="tm">0–3′</span><div><b>Kalibrasi.</b> A: ulangi tiga masalah, minta konfirmasi. B: gambaran singkat (login lewat email, bisa dari HP, satu email banyak entitas, langganan per database).</div></div>
+<div class="st"><span class="tm">3–6′</span><div><b>Berhenti dan bertanya.</b> “Sebelum saya masuk ke modulnya, boleh dijelaskan kebutuhannya sekarang seperti apa?” Banyak orang: tanya satu per satu. Pertanyaan staf sering jadi bahan demo terbaik.</div></div>
+<div class="st"><span class="tm">6–20′</span><div><b>Buka yang dipakai.</b> Lewati yang tidak relevan (usaha jasa: tanpa persediaan). Mulai dari dokumen harian mereka, akhiri di laporan yang dicari pemilik. Tunjukkan cetakan dan kolom bisa disesuaikan.</div></div>
+<div class="st"><span class="tm">20–27′</span><div><b>Pertanyaan teknis.</b> Integrasi, keamanan dan hak akses, kapasitas data, pembatasan akses. Jawab lugas, termasuk yang berbiaya. Tak yakin: cek dan kabari hari itu juga.</div></div>
+<div class="st"><span class="tm">27–30′</span><div><b>Langkah berikut.</b> Jangan tutup dengan “gimana Pak?”. Minta data perusahaan, sebut proforma menyusul, arahkan ke pembayaran atau dua pilihan tanggal.</div></div></div>
+<div class="c"><h3>Ditanya harga di tengah demo</h3><p><b>Pengambil keputusan:</b> jawab saat itu. Sebut angka, apa yang termasuk, dan bahwa jumlah user menentukan, lalu lanjut demo.</p><p><b>Staf, lingkup belum jelas:</b> “Tergantung berapa orang yang pakai dan modul apa yang dibutuhkan. Boleh saya tanya dua hal dulu supaya angkanya tidak meleset?”</p><p class="m">Tetap dilarang: angka sebelum user dan add-on diketahui, dan angka di pintu pada kunjungan pertama.</p></div>
+<div class="c"><h3>Bayar di tempat: tiga syarat, kurang satu jangan</h3><ul><li>Pengambil keputusan ada di ruangan, bukan diwakili.</li><li>Empat pertanyaan penawaran terjawab: produksi atau tidak, berapa lokasi, perlu laba per divisi atau tidak, berapa pengguna.</li><li>Prospek sudah menyebut sendiri angka kerugiannya.</li></ul><p class="m">Modul manufaktur: jangan dorong bayar di tempat. Targetnya penawaran resmi plus tanggal keputusan.</p><p>“Kebutuhannya sudah jelas ya Pak: satu database, empat pengguna, tanpa modul tambahan. Angkanya sekian per tahun, sekitar sekian per hari kerja. Kalau setuju, saya proses sekarang. Saya butuh nama PT, alamat, NPWP, dan email untuk akunnya. Tagihan langsung saya kirim, begitu masuk tim kami hubungi Bapak besok.”</p></div>
+<div class="c"><h3>Kalau jawabannya</h3><ul><li><b>“Nanti saya transfer”:</b> kirim tagihan saat itu juga, kunci tanggalnya, minta dikabari saat transfer.</li><li><b>“Bicara dengan orang lain dulu”:</b> “Beliau paling perhatian di bagian mana, biaya atau waktu?” Siapkan penawaran untuk ditunjukkan, kejar tanggal pembahasan.</li><li><b>“Minta diskon”:</b> “Kalau harganya cocok, hari ini bisa diputuskan Pak?” Jangan sebut angka yang belum disetujui.</li></ul></div>
+</div>
+
+<div class="sp" id="p-trial" hidden>
+<div class="c w"><h3>Yang dijual: tujuh hari pendampingan</h3><p class="m">Bukan akses gratisnya. Trial yang tidak dipakai lebih merugikan daripada tidak ditawarkan: prospek menyimpulkan “sudah dicoba, tidak kepakai”.</p></div>
+<div class="c"><h3>Empat syarat sebelum ditawarkan</h3><ol><li>PDM tahu dan setuju.</li><li>Ada satu masalah spesifik yang mau dibuktikan, disebut prospek sendiri.</li><li>Ada nama orang di pihak mereka yang memakai selama tujuh hari.</li><li>Tanggal review disepakati sebelum akun dibuat.</li></ol><p class="m">Kurang satu, jangan diaktifkan. Jangan tawarkan saat percakapan buntu, ke skor di bawah 60, ke perusahaan yang datanya belum siap, atau sebagai pengganti demo.</p></div>
+<div class="c"><h3>Kalimat tawaran</h3><p>“Daripada saya cerita panjang, mendingan dibuktiin. Saya bikinin akun percobaan tujuh hari, tapi bukan dikasih akun lalu ditinggal: saya dampingi langsung. Kita ambil satu gudang dan satu jenis barang. Siapa yang biasanya pegang stok? Kalau mulai Kamis, hari keenam kita ketemu lagi lihat hasilnya.”</p><p class="m">“Coba sendiri aja”: biasanya berhenti di saldo awal dan daftar barang, tawarkan menemani. “Kirim akunnya aja”: jangan kirim sebelum tahu siapa pemakainya dan mulai dari bagian apa.</p></div>
+<div class="c tw"><h3>Isi tujuh hari</h3><table id="tr7"></table><p class="m">Di H-2 belum ada satu transaksi pun: telepon hari itu juga dan tanyakan apa yang menghambat.</p></div>
+<div class="c w"><h3>Hari keenam</h3><p>“Dari sepuluh barang, tiga selisih antara catatan dan fisik. Kalau dikali seluruh gudang, kira-kira berapa Pak? Kalau diteruskan, data yang sudah masuk tidak perlu diulang. Penawarannya saya kirim hari ini atau besok?”</p><p class="m">Minta perpanjang: boleh, tapi tentukan satu bagian lagi dan tanggal review. Catat tanggal mulai trial di tracker; tahap funnel tetap Appointment/Demo selama trial.</p></div>
+</div>
+
+<div class="sp" id="p-harga" hidden>
+<div class="c w"><h3>Harga acuan</h3><p class="m">Diambil dari file v5.0 dan belum diverifikasi. Cek daftar harga resmi dan promo periode ini ke manajer sebelum berangkat.</p></div>
+<div class="c tw"><table id="hg"></table></div>
+<div class="c"><h3>Sudah termasuk paket dasar</h3><p>Pembelian, Penjualan, Persediaan dan Job Costing, Buku Besar, Kas dan Bank, Aktiva Tetap, Pajak, Rekonsiliasi Bank, Smartlink Tax dan E-commerce. <b>Terpisah:</b> Cabang, Cost and Profit Center, Manufaktur.</p></div>
+<div class="c w"><h3>Satu pertanyaan penentu ukuran deal</h3><p>“Bapak mengubah barang jadi barang lain, atau jual beli barang yang sama?” Jawabannya menggeser deal dari ±4 juta ke ±30 juta per tahun. Manufaktur hampir pasti diputuskan pemilik; sales baru didampingi senior sejak kunjungan kedua.</p></div>
+<div class="c tw"><h3>Perkiraan nilai per industri</h3><table id="ind"></table><p class="m">Hitungan kasar (2-8 user). Untuk kolom estimasi di tracker, bukan untuk disebut ke prospek.</p></div>
+<div class="c"><h3>Deteksi add-on saat KYC</h3><ul><li><b>Manufaktur:</b> “Ada bahan baku yang diolah dulu sebelum dijual?”</li><li><b>Cabang:</b> “Berapa lokasi? Laporan dipisah per lokasi?”</li><li><b>Cost and Profit Center:</b> “Mau tahu untung rugi per divisi atau proyek?”</li><li><b>User:</b> “Yang input siapa saja? Gudang input sendiri?”</li></ul></div>
+<div class="c"><h3>Aturan bicara harga</h3><ul><li>Sebut harga setelah prospek menyebut satu angka kerugiannya dan jumlah user serta add-on diketahui.</li><li>Sebut per tahun, pecah per bulan dan per hari kerja (paket dasar ±333 ribu per bulan, di bawah 15 ribu per hari kerja). Bandingkan dengan kerugiannya, bukan dengan pesaing.</li><li>Promo disebut paling akhir. Alat resmi: voucher cashback 3P, kuota 5 per sales per bulan, Rp 300.000 untuk pelanggan.</li><li>Boleh: “Promo periode ini berlaku sampai tanggal sekian.” Dilarang: “promo terakhir”, “setelah ini tidak ada lagi”, “harga naik permanen”.</li><li>Sebut sejak awal: jasa implementasi terpisah dan opsional; kunjungan lokasi di luar area belum termasuk akomodasi dan transport.</li></ul></div>
+<div class="c"><h3>Urgensi milik prospek</h3><p>Cari satu per prospek: tutup buku atau awal tahun · audit, kredit bank, investor · buka cabang atau gudang · staf accounting resign atau baru · naik status PKP · musim puncak industri. Tanpa satu pun, belum waktunya.</p></div>
+</div>
+
+<div class="sp" id="p-after" hidden>
+<div class="c w"><h3>Sumber: Handbook After Sales, 8 Mei 2026</h3><p class="m">Berlaku untuk pembeli paket Accurate Online dan pengguna add-on Multibranch atau POS. Semua sesi online lewat Google Meet. Isi bagian ini menggantikan angka lama di file v5.0.</p></div>
+<div class="c"><h3>Alur</h3><ol><li>Pembelian database Accurate Online.</li><li>H+1 hari kerja: CX Team menghubungi pelanggan (bukan sales).</li><li>Akun dan database disiapkan, dipandu CX.</li><li>Stage 1, lalu Stage 2, lalu Consultation (opsional).</li></ol></div>
+<div class="c tw"><table id="as"></table><p class="m">Open Class tidak ada di hari libur dan libur nasional.</p></div>
+<div class="c"><h3>Boleh dijanjikan</h3><ul><li>Dihubungi CX Team H+1 hari kerja.</li><li>Open Class Basic dan Advance boleh diikuti berulang.</li><li>Satu sesi Private per stage, maksimal satu kali pengulangan jika evaluasi trainer menilai perlu.</li><li>Bantuan: support@cpssoft.com, help.accurate.id, WA CX 0813-1500-135, YouTube @AccurateId.</li></ul></div>
+<div class="c w"><h3>Jangan dijanjikan</h3><ul><li>Training tanpa batas.</li><li>Reschedule lebih dari satu kali. Pengajuan paling lambat H-2 pukul 15.00 WIB; lewat itu, jadwal baru minimal 15 hari setelah jadwal lama.</li><li>Sesi tetap jalan tanpa konfirmasi: CX konfirmasi H-3 dan H-2, tanpa jawaban sampai H-2 pukul 15.00 dianggap batal.</li><li>Sistem langsung jalan setelah bayar, atau sales yang menginput data.</li></ul></div>
+<div class="c"><h3>Yang disiapkan pelanggan</h3><p><b>Stage 1:</b> akun, database, master data (template: bit.ly/masterdatadantemplate). <b>Stage 2:</b> alur bisnis dirinci, setup selesai, master data sudah terinput.</p></div>
+<div class="c"><h3>Peran sales <small class="m">(usulan)</small></h3><ul><li>H+1: pastikan CX sudah menghubungi pelanggan.</li><li>Sebelum Stage 1: pastikan master data siap.</li><li>Setelah database aktif: minta rujukan. Pelanggan yang merasa ditinggal setelah bayar tidak akan memberi rujukan.</li></ul></div>
+</div>
+</section>
+
+<section class="tab" id="t-angka" hidden>
+<h2>Istilah</h2>
+<div class="c tw"><table id="ist"></table></div>
+<h2>Target</h2>
+<div class="c tw"><table id="tgt"></table></div>
+<p class="m" style="margin:0 4px 8px">Hari lapangan (Sen-Kam): 15-20 pintu (10-12 bila ada demo), 6-8 bertemu orang tepat. Jumat: 30-40 telepon, 4-5 KYC, 3-4 janji. Hari terlewat dikejar, bukan dihapus. Closing bukan target harian.</p>
+<div class="c"><h3>Sales baru: tandem</h3><p>1 sampai 2 minggu. Observasi, ikut membantu, dipandu, mandiri. Target baru berjalan setelah lulus tandem.</p></div>
+<div class="c"><h3>Aturan lead</h3><ul><li>Sebelum menambah prospek, cari nama perusahaan di tracker. Duplikat berarti sudah ada pemiliknya.</li><li>Kepemilikan terkunci ke nama perusahaan, bukan wilayah. Bila bentrok, yang lebih dulu punya KYC di atas 70% memegang.</li><li>Tanpa aktivitas 30 hari, kepemilikan lepas.</li><li>Nomor prospek wajib tercatat di tracker, bukan hanya di HP.</li><li>Jangan hubungi daftar jangan diganggu: pelanggan aktif, prospek tahap penawaran, dan yang minta tidak dihubungi.</li><li>Tim ini hanya menjual Accurate Online. Produk kasir (APOS) diteruskan lewat leader.</li></ul></div>
+<div class="c w"><h3>Belum ada di halaman ini</h3><p class="m">Battlecard, kalkulator ROI, ICP per industri, jadwal koridor mingguan, narasi WA dan cold call masih di file v5.0. Angka target adalah asumsi awal. Denda dan SP diatur di ketentuan perusahaan.</p></div>
+</section>
+
+</main>
+<nav>
+<button data-t="hari">Hari Ini</button><button data-t="siapkan">Siapkan</button><button data-t="pintu">Pintu</button><button data-t="gali">Gali</button><button data-t="skor">Skor</button><button data-t="closing">Closing</button><button data-t="angka">Angka</button>
+</nav>
+<script>
+const $=s=>document.querySelector(s);
+function show(id){
+  if(!document.getElementById('t-'+id)) id='hari';
+  document.querySelectorAll('.tab').forEach(t=>t.hidden=t.id!=='t-'+id);
+  document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.t===id));
+  window.scrollTo(0,0);
+}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{location.hash=b.dataset.t});
+addEventListener('hashchange',()=>show(location.hash.slice(1)));
+
+const rows=(id,head,data)=>{$(id).innerHTML=(head?'<tr>'+head.map(h=>'<th>'+h+'</th>').join('')+'</tr>':'')+data.map(r=>'<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('')};
+rows('#kait',null,[
+["Distributor, grosir","“Biasanya distributor seukuran ini kerepotan di piutang, suka lupa siapa yang udah jatuh tempo. Di sini nagihnya masih dicatat manual?”"],
+["Manufaktur","“Pabrik seukuran gini biasanya baru tau untungnya pas tutup tahun Pak. Harga pokok per produk udah dihitung apa masih kira-kira?”"],
+["Supplier pabrik","“Yang jualan ke pabrik biasanya tagihannya ketahan gara-gara dokumen nggak cocok. Di sini pernah?”"],
+["Importir, forwarder","“Bea sama ongkos impor udah masuk ke harga barang apa masih dicatat sendiri di Excel Pak?”"],
+["Trading","“Kalau ada yang minta penawaran pagi ini, biasanya kekirim berapa lama Pak?”"],
+["Retail, multi outlet","“Kalau tutup bulan, laporan laba per outlet keluarnya tanggal berapa biasanya?”"],
+["F&amp;B","“Biaya bahan per menu udah dipatok tetap apa ikut harga pasar hari itu Pak?”"]]);
+rows('#tolak',['Prospek bilang','Jawab'],[
+["“Titip brosur aja”","“Boleh, saya tinggal. Satu pertanyaan: stok masih Excel apa udah pakai sistem?”"],
+["“Bosnya nggak ada”","“Biasanya ada jam berapa Pak? Saya balik Kamis pagi.” Catat jamnya."],
+["“Udah pakai software”","“Software apa? Yang masih manual di luar itu apa?” Jangan jelekkan."],
+["“Lagi sibuk”","“Paling nggak sibuk jam berapa, pagi apa sore? Saya balik lagi.”"],
+["“Kirim proposal email”","“Bisa. Jawab dua hal dulu, biar proposalnya sesuai kondisi di sini.”"],
+["“Pembukuan udah beres”","“Laporan laba rugi bulan lalu udah keluar belum?”"],
+["“Mahal”","“Saya belum sebut harga lho. Selisih stok tahun lalu kalau dirupiahin berapa?”"],
+["“Nanti kalau udah gede”","“Malah enak sekarang, datanya masih dikit.”"],
+["“Karyawan nggak bakal bisa”","“Yang input orang yang sama, formnya mirip nota. Mulai satu gudang dulu.”"],
+["“Udah ada konsultan pajak”","“Konsultan biasanya seneng datanya rapi. Beliau mintanya dalam bentuk apa?”"]]);
+rows('#ist',null,[
+["Empat angka wajib","SKU, jumlah gudang/outlet, sistem sekarang, nama dan jabatan PDM."],
+["KYC dasar","Empat angka terisi. Ini yang dihitung harian. Sales baru bulan 1: cukup nama dan jabatan PDM plus satu masalah."],
+["KYC siap demo","Checklist KYC terisi 70% atau lebih. Syarat demo."],
+["Demo","Menunjukkan sistem ke PDM dengan KYC siap demo. Boleh online."],
+["Meeting","Dijadwalkan sebelumnya dengan PDM atau kepala bagian."],
+["Tidak dihitung","Ngobrol dengan admin, satpam, staf gudang; tanpa janji; demo ke yang belum menyebut masalah; tidak dicatat di HubSpot hari itu."],
+["Data HubSpot","Satu perusahaan satu data, nama deal = nama perusahaan, input lewat Sales Tools. Bukan closing."],
+["Closing","Pelanggan sudah membayar."]]);
+rows('#tgt',['','Senior, junior','Baru, bulan 1'],[
+["Data HubSpot","3/hari (60/bln)","2/hari (40/bln)"],
+["Demo/meeting","1/hari kerja","Setelah tandem"],
+["KYC dasar","3-4/hari lapangan, min 2","12-15/bln"],
+["Nama PDM","Di tiap KYC","50-60/bln"],
+["Janji temu","7-12/minggu","Ikut tandem"],
+["Proforma","1-3/minggu","Setelah tandem"]]);
+
+const PIN=[["Foto plang PT/CV",3],["Telepon kantor tetap",2],["Gudang, truk, atau forklift terlihat",2],["Jam buka seperti jam kantor",1],["Di kompleks pergudangan/kawasan industri",1],["Situs web atau akun bisnis aktif",1],["Ulasan menyebut karyawan/lowongan",1],["Foto interior kantor/ruang admin",1]];
+$('#pin').innerHTML=PIN.map(p=>'<label class="ck"><input type="checkbox" data-v="'+p[1]+'"> '+p[0]+' <b>+'+p[1]+'</b></label>').join('');
+function pin(){let s=0;document.querySelectorAll('#pin input:checked').forEach(c=>s+=+c.dataset.v);
+  $('#pinr').innerHTML=s?'<b>'+s+'</b> · '+(s>=8?'Masuk daftar kunjungan':s>=5?'Telepon dulu':'Buang'):'Centang ciri yang terlihat di pin Maps';}
+$('#pin').onchange=pin;pin();
+
+const F=[
+["Kecocokan industri",20,[["Distributor/importir/manufaktur/grosir",20],["Kontraktor/F&B multi outlet/retail chain",15],["Trading/supplier/jasa B2B",11],["Jasa perorangan/retail 1 toko",5]]],
+["Stok dan gudang",20,[[">500 SKU atau >1 gudang",20],["100-500 SKU, 1 gudang",14],["<100 SKU",7],["Tanpa stok",3]]],
+["Sistem sekarang",20,[["Excel atau buku tulis",20],["Kasir saja, akuntansi Excel",16],["Software lama/desktop bermasalah",12],["ERP mapan (SAP/Oracle/Odoo)",2]]],
+["Transaksi dan tim finance",15,[[">300 trx/bln, 2+ staf finance",15],["100-300 trx, 1 staf",11],["<100 trx, admin merangkap",6],["Owner mencatat sendiri",3]]],
+["Cabang, outlet, kanal",10,[["3 atau lebih",10],["2 lokasi",7],["1 lokasi",3]]],
+["Akses ke PDM",10,[["Sudah bicara dengan owner/direktur",10],["Finance/accounting manager",7],["Baru staf admin",3],["Belum tahu siapa PDM",0]]],
+["Pemicu dan urgensi",5,[["Kejadian nyata (audit, selisih stok, resign, buka cabang)",5],["Mengeluh tanpa tenggat",3],["Tidak ada keluhan",0]]]];
+$('#sk').innerHTML=F.map((f,i)=>'<label>'+f[0]+' <small>maks '+f[1]+'</small><select><option value="">pilih</option>'+f[2].map(o=>'<option value="'+o[1]+'">'+o[0].replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+' ('+o[1]+')</option>').join('')+'</select></label>').join('');
+function sk(){
+  const s=[...document.querySelectorAll('#sk select')];
+  const n=s.filter(x=>x.value!=='').length;
+  const t=s.reduce((a,x)=>a+(+x.value||0),0);
+  let l=t>=80?'HOT':t>=60?'WARM':t>=40?'NURTURE':'TUTUP';
+  const cut=s[5].value==='0'||s[2].value==='2';
+  if(cut&&(l==='HOT'||l==='WARM'))l='NURTURE';
+  $('#skr').innerHTML=n<7?'<b>'+t+'</b> · isi '+(7-n)+' faktor lagi':'<b>'+t+'</b> · '+l+(cut?' (diturunkan: PDM belum diketahui atau sudah ERP)':'');
+}
+$('#sk').onchange=sk;sk();
+
+$('#cp').onclick=()=>{const t=($('#nm').value||'Prospek')+' | '+$('#skr').textContent;try{navigator.clipboard.writeText(t).then(()=>{$('#cpr').textContent='Tersalin: '+t},()=>{$('#cpr').textContent=t})}catch(e){$('#cpr').textContent=t}};
+
+const K="Cikupa|A+|T1|P1 tiap minggu|350-600;Curug|A+|T3|P1 tiap minggu|300-500;Kelapa Dua|A+|T3|P1 tiap minggu|400-700;Balaraja|A|T2|P1 blok mingguan|180-320;Pasar Kemis|A|T6|P1 blok mingguan|250-450;Pagedangan|A|T4|P1 janji temu, bukan walk-in|300-500;Kosambi|A|T5|P1 blok, 09.00-15.00|150-280;Panongan|B+|T1|P2 gabung Cikupa|120-220;Tigaraksa*|B+|T2|P2 1 hari per 2 minggu|100-190;Cisauk|B+|T4|P2 gabung Pagedangan|90-160;Legok|B+|T3|P2 gabung Curug|90-170;Sindang Jaya|B+|T6|P2 gabung Pasar Kemis|80-150;Sepatan|B+|T6|P2 gabung Pasar Kemis|70-140;Sepatan Timur|B|T6|P3 sisipan|40-90;Teluknaga|B|T5|P2 gabung Kosambi|70-130;Pakuhaji|B|T5|P3 sisipan|30-70;Rajeg|B|T6|P3 sisipan|50-110;Cisoka*|B|T2|P3 gabung Tigaraksa|40-90;Solear*|B|T2|P3 sisipan|30-70;Jayanti|B|T2|P3 gabung Balaraja|40-90;Sukamulya|C|T2|P4 telepon saja|20-45;Jambe|C|-|P4 telepon saja|10-25;Kresek|C|-|P4 telepon saja|10-25;Gunung Kaler|C|-|P4 telepon saja|5-20;Kronjo|C|-|P4 telepon saja|5-20;Mekar Baru|C|-|P4 telepon saja|5-15;Mauk|C|-|P4 telepon, kunjungan bila ada janji|20-45;Kemiri|C|-|P4 telepon saja|5-15;Sukadiri|C|-|P4 telepon saja|5-15".split(';').map(r=>r.split('|'));
+const TN={T1:'Industri Inti',T2:'Koridor Barat',T3:'Komersial Timur',T4:'BSD Selatan',T5:'Utara Bandara',T6:'Sabuk Pasar Kemis'};
+const IND='distributor,supplier,gudang,pabrik,ekspedisi,importir,grosir,konveksi,kontraktor,toko bangunan,packaging,cold storage,percetakan,catering,forwarder'.split(',');
+$('#ck').innerHTML=K.map(r=>'<option>'+r[0].replace('*','')+'</option>').join('');
+$('#ci').innerHTML=IND.map(x=>'<option>'+x+'</option>').join('');
+function mk(){const q=$('#ci').value+' '+$('#ck').value,e=encodeURIComponent(q);
+  $('#cq').textContent='Keyword: '+q;
+  $('#lm').href='https://www.google.com/maps/search/'+e;
+  $('#lg').href='https://www.google.com/search?q='+encodeURIComponent(q+' Tangerang');
+  $('#ll').href='https://www.linkedin.com/search/results/companies/?keywords='+e;}
+$('#ck').onchange=$('#ci').onchange=mk;mk();
+$('#fk').innerHTML='<option value="">Semua (29)</option>'+Object.keys(TN).map(k=>'<option value="'+k+'">'+k+' '+TN[k]+'</option>').join('')+'<option value="-">Telepon saja (8)</option>';
+function kc(){const v=$('#fk').value;rows('#kec',['Kecamatan','Tier','Terr.','Prioritas','Est.'],K.filter(r=>!v||r[2]===v).map(r=>[r[0],'<span class="tr t'+r[1].replace('+','p')+'">'+r[1]+'</span>',r[2],r[3],r[4]]));}
+$('#fk').onchange=kc;kc();
+rows('#jam',['Tipe','Jam terbaik','Hindari'],[
+["Pabrik, kawasan industri","09.00-11.00","Sebelum 08.30, setelah 15.30, Jumat 11.00-13.30"],
+["Gudang","09.30-11.30","Bongkar muat pagi, akhir bulan"],
+["Ruko trading, distributor","10.00-11.30, 13.30-15.30","Sebelum 09.00, jam makan siang"],
+["Retail, toko","10.00-11.30","Sore dan akhir pekan"],
+["F&amp;B","14.00-16.00","11.30-13.30, setelah 18.00"],
+["Kantor BSD, gedung","Hanya dengan janji","Walk-in"],
+["Kontraktor","08.00-09.30","Siang sampai sore"]]);
+
+try{const S=JSON.parse(localStorage.getItem('ps')||'{}'),I=['ck','ci','fk'];I.forEach(i=>{if(S[i]!==undefined)$('#'+i).value=S[i]});mk();kc();I.forEach(i=>$('#'+i).addEventListener('change',()=>{const o={};I.forEach(k=>o[k]=$('#'+k).value);localStorage.setItem('ps',JSON.stringify(o))}))}catch(e){}
+const IC={hari:'<path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',siapkan:'<path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>',pintu:'<path d="M4 5h16v11H9l-5 4z"/>',gali:'<circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/>',skor:'<path d="M5 20V10M12 20V4M19 20v-7"/>',angka:'<path d="M4 6h16M4 12h16M4 18h10"/>',closing:'<path d="M4 12l5 5L20 6"/>'};
+document.querySelectorAll('nav button').forEach(b=>b.insertAdjacentHTML('afterbegin','<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">'+IC[b.dataset.t]+'</svg>'));
+(()=>{const j=jk(),h=j.getHours(),D=['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'];document.querySelector('header').insertAdjacentHTML('beforeend','<p class="gr">'+(h<11?'Selamat pagi':h<15?'Selamat siang':h<18?'Selamat sore':'Selamat malam')+' · '+D[j.getDay()]+', '+j.getDate()+'</p>')})();
+const HB=[
+["08.00-08.30","Morning Briefing & Planning","Daily Sales Plan",["Review pencapaian kemarin.","Menentukan target hari ini.","Menentukan prospek prioritas.","Menyusun agenda meeting dan demo.","+Cek inbound baru di HubSpot dan hubungi hari itu juga (batas 2x24 jam).","+Telepon konfirmasi janji hari ini.","+Hari lapangan: kunci satu koridor dan cek keselamatan rute."]],
+["08.30-10.00","Database Building","Database baru berkualitas",["Mencari perusahaan potensial (tab Siapkan).","Mapping bisnis berdasarkan industri.","Mencari PIC perusahaan.","Validasi nomor telepon dan kontak.","Memasukkan database ke CRM.","+Nilai pin Maps: 8 poin atau lebih dikunjungi, 5-7 telepon dulu, urutkan dari yang terjauh.","+Cari nama perusahaan di tracker dulu; duplikat berarti sudah ada pemiliknya."],["Mencari perusahaan potensial (tab Siapkan).","Mapping bisnis berdasarkan industri.","Mencari PIC perusahaan.","Validasi nomor telepon dan kontak.","Memasukkan database ke CRM.","+Jumat: 20-30 prospek baru dari Maps dan LinkedIn.","+Cari nama di tracker dulu; duplikat berarti sudah ada pemiliknya."]],
+["10.00-12.00","Prospecting & Connecting","Respons dan appointment",["+Kunjungan pintu di koridor yang sudah dikunci (tab Pintu).","Cold call dan WhatsApp prospecting di sela transit.","Menghubungi database baru.","Menggali kebutuhan awal.","Membuat appointment.","+Target 15-20 pintu per hari (10-12 jika ada demo), 6-8 bertemu orang yang tepat.","+Empat angka wajib tiap kunjungan; tanpa itu tidak dihitung."],["Cold call: 30-40 nomor, 10-15 tersambung.","WhatsApp prospecting.","Menghubungi database baru.","Menggali kebutuhan awal.","Membuat appointment (3-4 janji untuk minggu depan).","+KYC lewat telepon: 4-5 prospek.","+Satu jam merekrut perujuk."]],
+["12.00-13.00","Istirahat","-",["Waktu istirahat dan makan siang.","+Jumat: sesuaikan dengan waktu salat Jumat."]],
+["13.00-14.30","Meeting & Discovery / KYC","Qualified Prospect",["Melakukan meeting online atau offline.","Mengidentifikasi proses bisnis customer.","Menggali permasalahan operasional.","Mengidentifikasi kebutuhan software accounting.","Memetakan decision maker.","+Pastikan empat angka wajib terisi (tab Gali).","+Tanya angka tiap masalah (rupiah, jam kerja) sebagai bahan demo.","+Hitung kelengkapan KYC; demo hanya jika 70% atau lebih.","+Minta janji berikutnya sebelum pamit; WA konfirmasi dalam 10 menit."]],
+["14.30-15.30","Product Demonstration","Customer memahami solusi",["Demo Accurate sesuai kebutuhan.","Menjelaskan solusi berdasarkan pain point.","Menunjukkan manfaat penggunaan.","Menggali respons dan keberatan customer.","+Buka dengan mengulang tiga masalah yang ia sebut sendiri.","+Syarat: KYC siap demo dan PDM hadir.","+Tutup dengan langkah berikut: trial, proforma, atau tanggal review."]],
+["15.30-16.30","Follow-up & Acquisition","Pipeline bergerak dan akuisisi",["Follow-up prospek sebelumnya.","Mengirimkan penawaran atau proforma.","Menangani objection.","Mendorong keputusan pembelian.","Mengejar peluang akuisisi.","+Urutan: HOT yang menunggu penawaran atau bayar, lalu trial dengan sisa tiga hari atau kurang.","+Ritme: H+1, H+3, H+7; setelah demo 24 jam; proforma maksimal 48 jam."]],
+["16.30-17.00","Daily Evaluation & Reporting","Daily Sales Report",["Mengisi realisasi aktivitas.","Membandingkan target dengan aktual.","Mengevaluasi kendala.","Menentukan prospek prioritas besok.","Menyusun Next Action.","+Semua data hari ini masuk HubSpot dengan stage benar; tidak ada hari kosong.","+Hitung skor tiap prospek (tab Skor), salin ke tracker; tiap prospek punya tanggal kontak berikutnya.","+Buat jadwal demo untuk dua hari ke depan."]]];
+function jk(){const o={};new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).forEach(x=>o[x.type]=x.value);return new Date(+o.year,o.month-1,+o.day,+o.hour,+o.minute)}
+const WD=jk();
+let MD=WD.getDay()===5?'t':'l';
+let OPEN={};
+function jr(){
+  let st={};const key='hr'+WD.toDateString();
+  try{st=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){}
+  const mn=WD.getHours()*60+WD.getMinutes(),wk=WD.getDay()>0&&WD.getDay()<6;
+  const T=HB.map(b=>{const r=b[0].split('-');return [+r[0].slice(0,2)*60+ +r[0].slice(3),+r[1].slice(0,2)*60+ +r[1].slice(3)]});
+  let cur=T.findIndex(t=>mn>=t[0]&&mn<t[1]);const isNow=wk&&cur>=0;
+  if(cur<0){cur=T.findIndex(t=>t[0]>mn);if(cur<0)cur=HB.length-1}
+  $('#jd').innerHTML=HB.map((b,i)=>{
+    const r=b[0].split('-'),it=(MD==='t'&&b[4])?b[4]:b[3],op=OPEN[i]!==undefined?OPEN[i]:i===cur;
+    return '<div class="c blk'+(isNow&&i===cur?' now':'')+(st[i]?' done':'')+(op?' open':'')+'" data-i="'+i+'"><div class="bh"><span class="tm">'+r[0]+'\u2013'+r[1]+'</span><h3>'+b[1].replace('&','&amp;')+'</h3><span class="cv"></span><label class="dn"><input type="checkbox" data-i="'+i+'"'+(st[i]?' checked':'')+'>Selesai</label></div><div class="bd"><ul>'+it.map(x=>x[0]==='+'?'<li class="ad">'+x.slice(1)+'</li>':'<li>'+x+'</li>').join('')+'</ul></div>'+(b[2]!=='-'?'<p class="out"><b>Output</b>'+b[2]+'</p>':'')+'</div>';
+  }).join('');
+  const n=HB.filter((b,i)=>st[i]).length;
+  $('#pg').innerHTML='<div style="width:'+(n/HB.length*100)+'%"></div>';
+  $('#pgt').textContent=n+' dari '+HB.length+' blok selesai. Ketuk judul blok untuk membuka atau menutup.';
+  document.querySelectorAll('#sg button').forEach(b=>b.classList.toggle('on',b.dataset.m===MD));
+  $('#jd').onchange=e=>{const c=e.target;if(!c.dataset.i)return;st[c.dataset.i]=c.checked;try{localStorage.setItem(key,JSON.stringify(st))}catch(x){}jr()};
+  $('#jd').onclick=e=>{if(e.target.closest('.dn'))return;const h=e.target.closest('.bh');if(!h)return;const k=h.parentElement;OPEN[+k.dataset.i]=!k.classList.contains('open');jr()};
+}
+document.querySelectorAll('#sg button').forEach(b=>b.onclick=()=>{MD=b.dataset.m;jr()});
+jr();
+rows('#tr7',['Hari','Dikerjakan sales','Hasil'],[
+["H-0","Buat akun, kirim panduan awal, sepakati satu kasus dan pemakainya","Akun aktif, tanggal review dicatat"],
+["H-1","Kirim format data (cukup sebagian kecil)","Daftar barang contoh kembali"],
+["H-2","Dampingi input pertama lewat telepon atau berbagi layar. Hari paling menentukan","Minimal satu transaksi oleh orang mereka"],
+["H-4","Cek lewat WhatsApp: sudah sampai mana, ada yang macet","Tahu masih jalan atau berhenti"],
+["H-6","Review dengan PDM. Tunjukkan hasilnya, bukan fiturnya","Keputusan atau tanggal keputusan"],
+["H-7","Kirim proforma sesuai user dan modul yang terpakai","Proforma terkirim, tanggal bayar disepakati"]]);
+rows('#hg',['Komponen','Harga acuan','Catatan'],[
+["Accurate Online","Rp 3.996.000 / tahun","1 database, 1 user, sudah termasuk PPN 11%"],
+["AOL + Modul Manufaktur","Rp 30.636.000 / tahun","1 database + manufaktur, 1 user"],
+["Tambahan user","Rp 266.400 / tahun","Per user"],
+["Cabang / Branch","Rp 1.198.800 / tahun","Add-on"],
+["Cost and Profit Center","Rp 1.332.000 / tahun","Add-on"],
+["Jasa implementasi","Terpisah, opsional","Setup dan training"]]);
+rows('#ind',['Industri','Per tahun'],[
+["Distributor, grosir, trading, supplier","±4-6 juta"],
+["Distributor multi gudang atau cabang","±5-9 juta"],
+["Retail atau F&amp;B multi outlet","±6-12 juta"],
+["Kontraktor, jasa, agency","±4-7 juta"],
+["Importir dan forwarder","±4-6 juta"],
+["Manufaktur, konveksi, produsen makanan","±26-33 juta"]]);
+rows('#as',['Program','Waktu','Isi'],[
+["Open Class Basic","3 jam, Sen-Jum 13.00-16.00, group","Fitur utama dan alur dasar. Per jenis usaha: Sen Distribusi/Retail, Sel Jasa, Rab F&amp;B, Kam Kontraktor, Jum Manufaktur"],
+["Stage 1 Setup","Private 60 menit","Setup database (profil, pajak, mata uang), input data awal"],
+["Stage 2 Transaksi","Private 60 menit","Transaksi harian, laporan, aktivasi database"],
+["Consultation","Private 60 menit, opsional","Kendala dan penggunaan lanjutan"],
+["Open Class Advance","Sen-Rab 14.00-16.00","Tanya jawab dan studi kasus, semua jenis usaha"]]);
+document.querySelectorAll('#sb button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.sp').forEach(x=>x.hidden=x.id!=='p-'+b.dataset.p);document.querySelectorAll('#sb button').forEach(x=>x.classList.toggle('on',x===b))});
+document.querySelector('#sb button').click();
+show(location.hash.slice(1)||'hari');
+setTimeout(()=>{const n=document.querySelector('#jd .now');if(n&&!location.hash)window.scrollTo({top:n.getBoundingClientRect().top+window.scrollY-150,behavior:'smooth'})},150);
+</script>
+
+<style>
+#pwa-install{position:fixed;left:12px;right:12px;bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:20;display:none;align-items:center;gap:10px;padding:12px 14px;background:#075c45;color:#fff;border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.22);font:600 13px/1.35 system-ui,sans-serif}
+#pwa-install button{border:0;border-radius:10px;padding:10px 13px;background:#fff;color:#075c45;font-weight:800;white-space:nowrap}
+#pwa-install .dismiss{background:transparent;color:#fff;padding:5px 8px;font-size:18px}
+@media (display-mode:standalone){#pwa-install{display:none!important}}
+</style>
+<div id="pwa-install" role="region" aria-label="Instal Playbook">
+  <span style="flex:1">Pasang Playbook di layar utama agar mudah dibuka seperti aplikasi.</span>
+  <button id="pwa-install-btn" type="button">Instal</button>
+  <button class="dismiss" id="pwa-dismiss" type="button" aria-label="Tutup">×</button>
+</div>
+<script>
+(() => {
+  const bar = document.getElementById('pwa-install');
+  const installBtn = document.getElementById('pwa-install-btn');
+  const dismissBtn = document.getElementById('pwa-dismiss');
+  let installPrompt = null;
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  const dismissed = sessionStorage.getItem('pwa-install-dismissed') === '1';
+  if (!isStandalone && !dismissed) bar.style.display = 'flex';
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault(); installPrompt = event; bar.style.display = 'flex';
+  });
+  installBtn.addEventListener('click', async () => {
+    if (installPrompt) {
+      installPrompt.prompt();
+      await installPrompt.userChoice;
+      installPrompt = null;
+      bar.style.display = 'none';
+    } else {
+      alert('Untuk Android: buka menu Chrome (⋮), lalu pilih “Tambahkan ke layar utama” atau “Instal aplikasi”. Untuk iPhone: buka melalui Safari, tekan Share, lalu “Add to Home Screen”.');
+    }
+  });
+  dismissBtn.addEventListener('click', () => { bar.style.display = 'none'; sessionStorage.setItem('pwa-install-dismissed','1'); });
+  window.addEventListener('appinstalled', () => { bar.style.display = 'none'; });
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('./service-worker.js').catch(err => console.warn('Service worker gagal didaftarkan:', err)));
+  }
+})();
+</script>
+
+</body>
+</html>
